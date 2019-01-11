@@ -5,7 +5,7 @@
             "type": "node",
             "request": "launch",
             "name": "Start",
-            "program": "${workspaceFolder}/usergen.js"
+            "program": "${workspaceFolder}/usergen.js",
             "args": [
                 "-f",
                 "%a_%A_%p",

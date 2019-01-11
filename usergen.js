@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const program = require("commander");
-const generatePseudoWords = require("./src/generatePseudoWord.js");
+const getUsername = require("./src/getUsername.js");
 
 let args = { };
 
@@ -12,6 +12,11 @@ program.arguments("<quantity>")
                        %p Pseudo word`)
     .parse(process.argv);
 
-args.format = program.format;
+args.format = program.format || "%a_%A";
+args.quantity = args.quantity || 1;
 
-generatePseudoWords(3);
+for (let i = 0; i < args.quantity; i++) {
+    const username = getUsername(args.format);
+
+    console.log(username);
+}
