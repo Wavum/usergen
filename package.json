@@ -1,0 +1,8 @@
+{
+  "name": "usergen",
+  "main": "usergen.js",
+  "private": true,
+  "dependencies": {
+    "commander": "^2.19.0"
+  }
+}

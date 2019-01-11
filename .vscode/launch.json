@@ -2,11 +2,15 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug",
-            "type": "python",
+            "type": "node",
             "request": "launch",
-            "program": "${workspaceFolder}/usergen.py",
-            "console": "integratedTerminal"
+            "name": "Start",
+            "program": "${workspaceFolder}/usergen.js"
+            "args": [
+                "-f",
+                "%a_%A_%p",
+                "10"
+            ]
         }
     ]
 }
